@@ -22,7 +22,7 @@ class TreeNode:
 
 
 class Solution:
-    def maxDepth1(self, root: TreeNode) -> int:
+    def maxDepth(self, root: TreeNode) -> int:
         # DFS
         if root:
             return max(self.maxDepth(root.left), self.maxDepth(root.right))+1
