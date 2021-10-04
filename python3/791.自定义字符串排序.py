@@ -7,5 +7,5 @@
 # @lc code=start
 class Solution:
     def customSortString(self, order: str, s: str) -> str:
+        pass
 # @lc code=end
-

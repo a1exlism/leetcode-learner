@@ -15,24 +15,22 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-        if not head or head.next == None:
-            return head
-        pre, cur = head, head.next
+        pre, cur = None, head  # dummy head
         while cur:
-            t = cur.next
-            cur.next = pre
-            pre, cur = cur, t
-        head.next = None
+            post = cur.next
+            cur.next = pre  # reverse-link
+            pre, cur = cur, post  # shift
+        print(post)
         return pre
 
+    # https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-shuang-zhi-zhen-di-gui-yao-mo-/
     def reverseList2(self, head: ListNode) -> ListNode:
-        # recursion
+        # up -> down
         if not head or head.next == None:
             return head
-        # traverse first
-        next_head = self.reverseList2(head.next)
-        # None.next ERROR
+        last = self.reverseList2(head.next)
+        # down -> up; exchange
         head.next.next = head
         head.next = None
-        return next_head
+        return last
 # @lc code=end
