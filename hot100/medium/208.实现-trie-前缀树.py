@@ -54,8 +54,7 @@ class Trie2:
     def insert(self, word: str) -> None:
         """ Inserts a word into the trie.  """
         p = self
-        last = len(word) - 1
-        for i, w in enumerate(word):
+        for w in word:
             if w not in p.suf:
                 p.suf[w] = Trie2()
             p = p.suf[w]

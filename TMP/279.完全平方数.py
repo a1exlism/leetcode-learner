@@ -3,6 +3,7 @@
 #
 # [279] 完全平方数
 # tags: [math | dynamic-programming | breadth-first-search ]
+# Difficulty:[Medium]
 from math import sqrt
 # @lc code=start
 

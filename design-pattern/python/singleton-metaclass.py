@@ -4,7 +4,7 @@ from threading import Lock, Thread
 
 
 class SingletonMeta(type):
-    # 元类 实现
+    """ 元类 实现 """
     _instances = {}
 
     _lock: Lock = Lock()

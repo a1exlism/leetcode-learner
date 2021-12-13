@@ -6,7 +6,7 @@
 
 # @lc code=start
 # Definition for singly-linked list.
-# 每个节点只考虑next即可
+# 每个节点只考虑next即可, cur 交换后均有序
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -14,6 +14,8 @@ class ListNode:
 
 
 class Solution:
+    """ exchange pre & cur """
+
     def reverseList(self, head: ListNode) -> ListNode:
         pre, cur = None, head  # dummy head
         while cur:

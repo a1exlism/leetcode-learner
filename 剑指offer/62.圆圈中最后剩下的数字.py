@@ -12,6 +12,7 @@ class Solution:
         # 状态方程: dp[i] -- (m, i)
         x = 0
         for i in range(2, n+1):
+            # %n, %n-1 ... %2; 删除数量一样, 剩余数唯一, ind 不同
             x = (m+x) % i
 
         return x
@@ -30,7 +31,7 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    for _ in range(100):
+    for _ in range(10):
         a, b = randint(1, 10000), randint(1, 99110)
         o1 = s.lastRemaining(a, b)
         o2 = s.lastRemaining2(a, b)

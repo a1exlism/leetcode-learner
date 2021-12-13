@@ -13,9 +13,10 @@
 1. 二分 $\to$ 分治
 2. 滑动窗口
 3. 搜索 BFS, DFS, 回溯
-4. 贪心+回溯 $\to$ 动态规划
+4. 贪心+回溯 $\to$ 动态规划 [DP][dp-oiwiki]
    - 回溯算法就是个 N 叉树的前后序遍历问题 [ref][fa1]
-   - dp ~= 记忆化递归
+   - DP VS 记忆化递归
+     - 没空间优化需求直接就记忆化(方便), 否则用迭代 dp
 5. 背包
 6. 位运算
 
@@ -37,6 +38,7 @@
 
 [math]: http://www.leetcodecn.com/pages/255f98/#leetcode-%E9%A2%98%E8%A7%A3---%E6%95%B0%E5%AD%A6
 [memoization]: https://leetcode-cn.com/tag/memoization/
+[dp-oiwiki]: https://oi-wiki.org/dp/
 [dp-1]: https://leetcode-cn.com/tag/dynamic-programming/problemset/
 [dp-2]: https://github.com/leetcode-pp/91alg-3/blob/master/lecture/topic-dp.md
 

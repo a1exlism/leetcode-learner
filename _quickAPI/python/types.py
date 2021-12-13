@@ -1,3 +1,4 @@
+""" str-list """
 # str to list
 s1 = '1234'
 l1 = list(s1)  # ['1', '2', '3', '4']

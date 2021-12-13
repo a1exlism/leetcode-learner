@@ -11,8 +11,7 @@ void put(int key, int value) 
 """
 
 
-import collections
-from typing import OrderedDict
+from collections import OrderedDict
 
 
 class DualLinkedList():
@@ -88,7 +87,7 @@ class LRUCache2:
     """
 
     def __init__(self, capacity: int):
-        self.cache = collections.OrderedDict()
+        self.cache = OrderedDict()
         self.cap = capacity
 
     def get(self, key: int) -> int:
